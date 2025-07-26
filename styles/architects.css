@@ -11,6 +11,9 @@
     display: flex;
 }
 
+.text-primary{
+    color: #FF900E;
+}
 /* dark-02 */
 .text-gray{
     color:#424242;
@@ -33,6 +36,13 @@
 
 }
 
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main>section{
+    margin-top: 130px;
+}
 /* header styles */
 
 
@@ -47,9 +57,7 @@
     font-weight: 700;
     font-size: 3rem; /*responsive krar jnno rem use krechi.Choto Screen size er jnno font-size change krleo ,sei maper 3gun nibe. 16px=1rem; 45px~3rem*/
 }
-.menu{
-    /* display:flex; */
-}
+
 .nav-item{
     list-style: none;
     margin-right: 20px;
@@ -77,9 +85,46 @@
     width:100%;
 }
 
+/* teams and feature related styles */
+.teams{
+    align-items: center;
+    gap: 73px;
+}
+.team-images-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.our-features{
+    max-width: 530px;
+}
+.feature-title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+#quick-list{
+    font-weight: 500;
+}
+ 
 /* responsive media query */
 @media screen and (max-width:576px){
-    .navbar, .menu{
+    .navbar, .menu, .teams{
         flex-direction: column;
+    }
+    .team-images-container{
+        grid-template-columns: 1fr;
+    }
+    .our-features{
+        margin:20px auto;
+    }
+}
+
+/* medium Device */
+@media screen and (min-width:577px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin: 50px auto;
     }
 }
