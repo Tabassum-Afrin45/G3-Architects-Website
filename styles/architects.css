@@ -107,6 +107,12 @@ main>section{
 }
  
 /* Features will enjoy */
+.features{
+    gap: 140px;
+}
+.feature-architect img{
+    width: 100%;
+}
 #feature-section-title{
     border-left: 5px solid #FF900E;
     padding-left: 20px;
@@ -116,7 +122,17 @@ main>section{
     box-shadow:0 4px 30px 0 rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     margin-bottom: 30px;
-    margin-right: 54px;
+}
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -92px;
+    margin-top: -77px;
+}
+#experience-year, .section-title{
+    font-size: 4rem;
+    font-weight: bold;
 }
 .feature-description{
     max-width: 586px;
@@ -167,6 +183,21 @@ main>section{
 .sponsor-companies img{
     filter: grayscale(100%);
 }
+
+/* Footer Style */
+.footer-section{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.footer-description{
+    background-color: #FFF4E7;
+    padding: 39px 410px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 150px;
+}
+
 /* responsive media query */
 @media screen and (max-width:576px){
     .navbar, .menu, .teams{
@@ -182,6 +213,10 @@ main>section{
     .facts-container ,.sponsor-companies{
         justify-items: center;
     }
+    #experience-badge{
+    margin-left: 25px;
+    margin-top: 20px;
+    }
 }
 
 /* medium Device */
@@ -196,5 +231,9 @@ main>section{
         grid-template-columns: repeat(2,1fr);
         gap: 50px;
         justify-items: center;
+    }
+     #experience-badge{
+    margin-left: 25px;
+    margin-top: 20px;
     }
 }
